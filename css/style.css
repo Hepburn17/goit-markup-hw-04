@@ -335,7 +335,7 @@ address {
     border-radius: 20px;
 }
 
-.team-icon svg {
+.team-icon {
     fill: var(--color-cloud);
 }
 
