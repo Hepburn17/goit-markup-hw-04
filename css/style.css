@@ -433,6 +433,12 @@ color: var(--color-ocean);
     fill: var(--color-ocean);
 }
 
+.customers-icon:hover,
+.customers-icon:focus {
+    color: var(--color-ocean);
+    fill: var(--color-ocean);
+}
+
 /*-------*/
 
 
