@@ -416,15 +416,21 @@ address {
 }
 
 .team-link-icon:hover,
-.team-link-icon:focus,
+.team-link-icon:focus {
+    background-color: var(--color-ocean);
+}
+
+
 .footer-icon-link:hover,
 .footer-icon-link:focus {
     background-color: var(--color-green);
 }
 
-.customers-icon:hover,
-.customers-icon:focus {
-    fill: var(--color-ocean)
+.customers-link:hover,
+.customers-link:focus {
+color: var(--color-ocean);
+    border-color: var(--color-ocean);
+    fill: var(--color-ocean);
 }
 
 /*-------*/
