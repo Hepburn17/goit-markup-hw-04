@@ -346,6 +346,7 @@ address {
 
 
 .customers-list {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -354,7 +355,6 @@ address {
 
 .customers-icon {
     width: 100%;
-    padding: 16px 32px;
     fill: var(--color-slate);
 }
 
@@ -362,7 +362,7 @@ address {
     display: flex;
     justify-content: center;
     align-items: center;
-     width: 100%;
+    width: 168px;
     height: 88px;
     color: var(--color-slate);
     border-radius: 4px;
