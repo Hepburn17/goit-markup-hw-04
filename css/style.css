@@ -15,9 +15,11 @@ h3,
 h4,
 p {
     margin: 0;
+    padding: 0;
 }
 
 * {
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -44,8 +46,8 @@ address {
 }
 
 .container {
-    width: 1158px;
-    margin: auto;
+    max-width: 1158px;
+    margin: 0 auto;
     padding: 0 15px;
 
 }
@@ -64,12 +66,14 @@ address {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 76px
 }
 
 .nav-links-list {
-    margin-left: 76px;
     display: flex;
-    column-gap: 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
 }
 
 .nav-contacts {
@@ -93,7 +97,6 @@ address {
     color: var(--color-iris);
     text-align: left;
     display: flex;
-    width: 44px;
     text-decoration: none;
 }
 
@@ -101,7 +104,6 @@ address {
     text-transform: uppercase;
     color: var(--color-navy-blue);
     display: flex;
-    width: 71px;
     text-decoration: none
 }
 
@@ -174,9 +176,9 @@ address {
 }
 
 .content-list {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    column-gap: 24px
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px
 }
 
 .section1-text {
@@ -188,6 +190,7 @@ address {
     color: var(--color-navy-blue);
     line-height: 3.75em;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .section1-content {
@@ -201,8 +204,7 @@ address {
 }
 
 .feature {
-    width: 264px;
-    height: 104px;
+    width: calc((100% - 72px) / 4);
 }
 
 .header2 {
@@ -217,9 +219,8 @@ address {
 }
 
 .what-are-we-doing-lists {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    column-gap: 24px
+    display: flex;
+    gap: 24px;
 }
 
 .header3 {
@@ -238,6 +239,7 @@ address {
     background-color: var(--color-white);
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
     width: 264px;
+    width: calc((100%-72px) / 4);
 }
 
 .our-team {
@@ -245,9 +247,10 @@ address {
 }
 
 .our-team-lists {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    column-gap: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
 }
 
 .text-content {
@@ -303,7 +306,6 @@ address {
 
 /*svg style-----*/
 .feature-icons {
-    width: 264px;
     height: 112px;
     align-items: center;
     justify-content: center;
@@ -316,7 +318,7 @@ address {
     margin: 24px 100px;
 }
 
-.team-item-icon {
+.team-link-icon {
     width: 40px;
     height: 40px;
 }
@@ -344,9 +346,10 @@ address {
 
 
 .customers-list {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
-    column-gap: 24px
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px
 }
 
 .customers-icon {
@@ -357,20 +360,17 @@ address {
 }
 
 .customers-item {
-    width: 168px;
-    height: 88px;
-}
-
-.customers-link {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 168px;
+     width: 100%;
     height: 88px;
     color: var(--color-slate);
     border-radius: 4px;
     border: 1px solid var(--color-slate);
 }
+
+
 /*-----*/
 
 
@@ -425,17 +425,13 @@ address {
     background-color: var(--color-green);
 }
 
-.customers-link:hover,
-.customers-link:focus {
-color: var(--color-ocean);
+.customers-item:hover {
     border-color: var(--color-ocean);
     fill: var(--color-ocean);
 }
 
-.customers-icon:hover,
-.customers-icon:focus {
-    color: var(--color-ocean);
-    fill: var(--color-ocean);
+.customers-icon:hover {
+    fill: var(--ocean);
 }
 
 /*-------*/
@@ -443,8 +439,7 @@ color: var(--color-ocean);
 
 .footer {
     background-color: var(--color-navy-blue);
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 100px 0;
 }
 
 .footer-container {
@@ -453,11 +448,12 @@ color: var(--color-ocean);
     flex-wrap: wrap;
 }
 
+.footer-logo-text {
+    margin-right: 120px;
+}
+
 .studio-white {
     color: var(--color-cloud);
-    display: flex;
-    width: 71px;
-    text-decoration: none
 }
 
 .increase-the-flow {
@@ -466,12 +462,13 @@ color: var(--color-ocean);
     font-weight: 400;
     letter-spacing: 0.02em;
     line-height: 1.5em;
-    width: 264px;
     color: var(--color-cloud);
+    width: 264px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer-logo {
-    height: 24px;
     letter-spacing: 0.03em;
     line-height: 1.3em;
     font-size: 18px;
@@ -480,12 +477,6 @@ color: var(--color-ocean);
     margin-bottom: 16px;
 }
 
-.footer-icon-wrapper {
-    width: 208px;
-    height: 80px;
-    flex-shrink: 0;
-    margin-left: 120px;
-}
 
 .social-media {
     color: var(--color-white);
@@ -495,7 +486,7 @@ color: var(--color-ocean);
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.32px;
-    padding-bottom: 16px;
+    margin-bottom: 16px;
 }
 
 .footer-icon-list {
@@ -503,6 +494,7 @@ color: var(--color-ocean);
     align-items: center;
     justify-content: center;
     gap: 16px;
+    padding: 0;
 }
 
 .footer-icon-link {
@@ -515,17 +507,21 @@ color: var(--color-ocean);
     border-radius: 20px;
 }
 
+.footer-icon-item {
+    width: 40px;
+    height: 40px;
+}
+
 .footer-icon {
     fill: var(--color-cloud);
 }
 
 
 .filters {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    column-gap: 24px;
-    align-items: center;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 24px;
     margin-bottom: 72px;
 }
 
@@ -546,9 +542,8 @@ color: var(--color-ocean);
 
 
 .project-card-rows {
-    width: 1128px;
-    display: grid;
-    grid-template-columns: auto auto auto;
+    display: flex;
+    flex-wrap: wrap;
     gap: 48px 24px;
 }
 
@@ -556,14 +551,14 @@ color: var(--color-ocean);
     background-color: var(---color-white);
     border: 1px solid #e7e9fc;
     box-sizing: border-box;
-    flex-basis: calc((100%- 48px) / 3);
+    width: calc((100% - 48px) / 3);
 }
 
-.img-icon {
-    width: 360px;
-    height: 300px;
-    object-fit: cover;
-    mix-blend-mode: normal;
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    overflow: clip;
 }
 
 .card-content {
