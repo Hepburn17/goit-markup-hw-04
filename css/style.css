@@ -355,6 +355,7 @@ address {
 
 .customers-icon {
     width: 100%;
+   
     fill: var(--color-slate);
 }
 
