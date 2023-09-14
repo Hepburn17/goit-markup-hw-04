@@ -353,8 +353,7 @@ address {
 }
 
 .customers-icon {
-    width: 104px;
-    height: 56px;
+    width: 100%;
     padding: 16px 32px;
     fill: currentColor;
 }
@@ -431,7 +430,6 @@ address {
 }
 
 .customers-icon:hover {
-    color: var(--color-ocean);
     fill: var(--color-ocean);
 }
 
