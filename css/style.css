@@ -430,8 +430,7 @@ address {
     fill: var(--color-ocean);
 }
 
-.customers-icon:hover,
-.customers-icon:focus {
+.customers-icon:hover {
     color: var(--color-ocean);
     fill: var(--color-ocean);
 }
