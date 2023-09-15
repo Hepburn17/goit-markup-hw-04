@@ -46,10 +46,9 @@ address {
 }
 
 .container {
-    max-width: 1158px;
-    margin: 0 auto;
+    width: 1158px;
+    margin: auto;
     padding: 0 15px;
-
 }
 
 .section {
@@ -220,7 +219,12 @@ address {
 
 .what-are-we-doing-lists {
     display: flex;
+    flex-wrap: wrap;
     gap: 24px;
+}
+
+.image{
+    width: calc((100% - 48px) / 3);
 }
 
 .header3 {
@@ -238,7 +242,6 @@ address {
     border-radius: 0px 0px 4px 4px;
     background-color: var(--color-white);
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-    width: 264px;
     width: calc((100%-72px) / 4);
 }
 
@@ -338,6 +341,7 @@ address {
     height: 40px;
     background-color: var(--color-iris);
     border-radius: 20px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-icon {
@@ -355,7 +359,6 @@ address {
 
 .customers-icon {
     width: 100%;
-   
     fill: var(--color-slate);
 }
 
