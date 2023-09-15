@@ -354,8 +354,7 @@ address {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 24px
-    cursor: pointer;
+    gap: 24px;
 }
 
 .customers-icon {
@@ -372,6 +371,7 @@ address {
     color: var(--color-slate);
     border-radius: 4px;
     border: 1px solid var(--color-slate);
+    cursor: pointer;
 }
 
 /*-----*/
