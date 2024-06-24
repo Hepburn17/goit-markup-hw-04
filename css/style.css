@@ -262,7 +262,10 @@ address {
     padding: 32px 16px;
 }
 
-
+.h2-img {
+    width: 360px;
+    height: 300px;
+}
 
 .image {
     width: calc((100% - 72px) / 1);
