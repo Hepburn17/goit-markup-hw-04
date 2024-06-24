@@ -132,7 +132,7 @@ address {
 }
 
 .heroimage {
-    background-size: contain;
+    background-size: cover;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
         url("../images/Presentation.png");
